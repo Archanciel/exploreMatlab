@@ -15,6 +15,6 @@ for k=1:60
     V = get(hSquare,'Vertices')'; % get the current set of vertices
     V = R*(V - C) + C; % do the rotation relative to the centre of the square
     set(hSquare,'Vertices',V'); % update the vertices
-    pause(0.01);
+    pause(0.05);
 end
 

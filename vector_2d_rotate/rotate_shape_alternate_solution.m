@@ -16,7 +16,7 @@ angleInDegrees = 90.00 ;%rotation angle in "degree"
 
 original = [[piont1; 1], [piont2; 1], [piont3; 1], [piont4; 1]] ;%corrdinate of rotation
 
-angleInRadians = degtorad(angleInDegrees);
+angleInRadians = degToRad(angleInDegrees);
 
 m = coordinate(1, 1) ;
 

@@ -184,6 +184,9 @@ classdef MortgageApp < matlab.apps.AppBase
             % Register the app with App Designer
             registerApp(app, app.MortgageCalculatorUIFigure)
 
+            % adding call to button callback so the initial values are
+            % plotted
+            MonthlyPaymentButtonPushed(app)
             if nargout == 0
                 clear app
             end

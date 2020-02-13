@@ -6,3 +6,5 @@ keys(c)
 values(c)
 two = c(' not a var name ')
 one = c('foo')
+% c(2) = 'two' % not correct !
+% c(2)

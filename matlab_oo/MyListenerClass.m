@@ -16,11 +16,11 @@ classdef MyListenerClass < handle
             fprintf('from handleOtherEvent (listener created from createListener method)\n');
         end  
         
-        function ls = createListenerForEvent(obj, eventGenerator, eventStr)
+        function createListenerForEvent(obj, eventGenerator, eventStr)
             % This method is called by the event generator instance which ask the 
             % current listener instance to add itself as listener to the event generator 
             % instance.            
-            ls = addlistener(eventGenerator, eventStr, @obj.handleThisEvent);
+            addlistener(eventGenerator, eventStr, @obj.handleThisEvent);
         end  
         
         function handleThisEvent(obj, eventGenerator, eventData)

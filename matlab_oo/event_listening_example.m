@@ -5,7 +5,7 @@ eventListener.createListener(eventGenerator); % setting listener in specific met
 fprintf('now firing trigger\n')
 eventGenerator.triggerEvent();
 
-fprintf('now testing addListenerToEvent\n');
+fprintf('\nnow testing MyEventGeneratorClass.addListenerToEvent\n\n');
 
 eventGenerator.addListenerToEvent(eventListener, 'AlternateEvent');
 eventGenerator.triggerEvent();

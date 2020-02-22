@@ -12,5 +12,11 @@ classdef MyListenerClass < handle
         function handleOtherEvent(obj, src, eventData)
             fprintf('from handleOtherEvent (listener created from createListener method)\n');
         end        
+        function ls = createEventListener(obj, src, eventStr)
+            ls = addlistener(src, eventStr, @obj.handleThisEvent);
+        end   
+        function handleThisEvent(obj, src, eventData)
+            fprintf('from handleThisEvent. Event = %s\n', eventData.EventName);
+        end        
     end
 end

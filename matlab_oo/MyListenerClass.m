@@ -17,9 +17,9 @@ classdef MyListenerClass < handle
         end  
         
         function ls = createListenerForEvent(obj, eventGenerator, eventStr)
-% This method is called by the event generator instance which ask the 
-% current listener instance to add itself as listener to the event generator 
-% instance.            
+            % This method is called by the event generator instance which ask the 
+            % current listener instance to add itself as listener to the event generator 
+            % instance.            
             ls = addlistener(eventGenerator, eventStr, @obj.handleThisEvent);
         end  
         

@@ -9,10 +9,20 @@ classdef MyListenerClass < handle
         end   
         
         function handleStateChange(obj, eventGenerator, eventData)
+            % All callback functions must accept at least two arguments:
+            %
+            % 1/ the handle of the object that is the source of the event
+            % 2/ an event.EventData object or an object that is derived 
+            %    from the event.EventData class.
             fprintf('from handleStateChange (listener created from constructor)\n');
         end
         
         function handleOtherEvent(obj, eventGenerator, eventData)
+            % All callback functions must accept at least two arguments:
+            %
+            % 1/ the handle of the object that is the source of the event
+            % 2/ an event.EventData object or an object that is derived 
+            %    from the event.EventData class.
             fprintf('from handleOtherEvent (listener created from createListener method)\n');
         end  
         
@@ -24,6 +34,11 @@ classdef MyListenerClass < handle
         end  
         
         function handleThisEvent(obj, eventGenerator, eventData)
+            % All callback functions must accept at least two arguments:
+            %
+            % 1/ the handle of the object that is the source of the event
+            % 2/ an event.EventData object or an object that is derived 
+            %    from the event.EventData class.
             fprintf('from handleThisEvent. Event = %s\n', eventData.EventName);
         end        
     end

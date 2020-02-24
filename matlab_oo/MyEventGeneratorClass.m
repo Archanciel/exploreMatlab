@@ -24,6 +24,9 @@ classdef MyEventGeneratorClass < handle
           % instance to add itself as listener to the event generator class, we
           % ask the event generator class to ask the listening class to add itself 
           % as listener of the event generator class.
+          %
+          % This vision is applied to the SplineModel class whose listeners are
+          % SplineView's.
           listener.createListenerForEvent(obj, eventStr);
       end
    end

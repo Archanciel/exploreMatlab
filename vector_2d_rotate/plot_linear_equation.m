@@ -6,7 +6,7 @@ y = m*x + b
 close all
 figure
 
-plot(x, y)
+plot(x, y, 'Color', [0.9290, 0.6940, 0.1250])
 
 %configTwoDAxis()
 xmin = -3

@@ -5,5 +5,5 @@ x = M(1,:)
 y = M(2,:)
 %patch=fill3(x, y, z, color);
 %patch.FaceAlpha=transparancy;
-p=plot(x, y, strcat(color,'.-'));
+p=plot(x, y, 'Color', color);
 p.LineWidth = lineWidth;

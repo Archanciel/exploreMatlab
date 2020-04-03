@@ -3,7 +3,7 @@ A = [1 2 2 3 3 3 4 5 6 6;20 15 17 8 12 1 30 40 25 35];
 close all
 figure
 subplot(2, 1, 1)
-p = plot(A(1,:), A(2,:), 'bo', 'MarkerSize', 10, 'MarkerFaceColor', 'b');title('Using plot')
+p = plot(A(1,:), A(2,:), 'bo', 'MarkerSize', 10, 'MarkerFaceColor', [0.9290, 0.6940, 0.1250]	);title('Using plot')
 %title('Using plot') % overwritten by figure title !
 xlabel('A line 1');
 ylabel('A line 2');
